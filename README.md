@@ -9,19 +9,20 @@
 
 
 ## Approaches:
-After reading the Project details provided, I had few ways I could implement it. Instead of creating the product to show data for a specific choice, I have created it to reflect data according to any Zip Code being entered. !!
+After reading the Project details provided, I had few ways I could implement it. Instead of creating the product to show data for a specific choice, I have created it to reflect data according to any Zip Code being entered by the user. !!
 
 ### Deployment on Client Side:
 *Pros: No Backend Needed*
 
   * Hacky Way(*Pros: No Api needed*) !!
     Use any web page url that shows the weather report, load it's content in a hidden iframe or something similar and then scraping it's html content to find the actual data and show it in the app being developed !
-        *  [Using HTML5 & PHP](https://www.google.com) _Could be created using Vanilla JS/Jquery too_
+    
+    *  [Using HTML5 & PHP](https://www.google.com) _Could be created using Vanilla JS/Jquery too_
 
   * Using the OpenWeatherMap API (*Cons: Registration Required for free subscription*)
     This was mentioned so preferring these approaches.
 
-    *  [Using Angular.JS v 1] (https://www.google.com)
+    *  [Using Angular.JS v 1](https://www.google.com) 
     *  [Using only JavaScript:](https://www.google.com)  choosing React as the preferred framework for this use-case.
 
 
