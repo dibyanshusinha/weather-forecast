@@ -17,7 +17,7 @@ After reading the Project details provided, I had few ways I could implement it.
   * Hacky Way(*Pros: No Api needed*) !!
     Use any web page url that shows the weather report, load it's content in a hidden iframe or something similar and then scraping it's html content to find the actual data and show it in the app being developed !
     
-    *  [Using HTML5 & PHP](https://www.google.com) _Could be created using Vanilla JS/Jquery too_
+    *  [Using HTML5 & PHP](https://www.google.com) _Could be created using Vanilla JS/Jquery too_ - Web Scraping
 
   * Using the OpenWeatherMap API (*Cons: Registration Required for free subscription*)
     This was mentioned so preferring these approaches.
@@ -32,6 +32,12 @@ After reading the Project details provided, I had few ways I could implement it.
 #### TDD Approach, using Mocha
 
 Choosing pure "request" Node.js module(doesn't have inbuilt Promise) for making requests and wrapping it as a Promise supported module. _Obviously using axios, it would have been simply much easier !!_
+
+  * [As a console App](https://www.google.com) 
+  * [As a webApp](https://www.google.com) 
+  
+  
+  
 ***********
 
 
