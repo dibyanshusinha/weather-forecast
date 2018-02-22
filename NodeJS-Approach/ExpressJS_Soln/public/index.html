@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Test Project</title>
+
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css">
+    <link href="assets/css/styles.css" rel="stylesheet" />
+
+</head>
+  <body>
+    <div class="content-container">
+        <div class="content-container" ng-view="">
+          <div class="container-holder">
+              <div class="container">
+                  <div class="center">
+                      <h1 class="center white">Weather Information</h1>
+                      <p class="lead center white"><strong>Enter your city's Zip-code below to get a forecast for the weather.</strong>
+                      </p>
+                      <form method="post" action="/fetchWeather">
+                        <input type="text" name="username">
+                        <input type="submit">
+                      </form>
+                      <form>
+                          <div class="form-group">
+                              <input type="text" class="form-control" name="city" ng-model="address" placeholder="Eg. Try 40741 for London..." />
+                          </div>
+                          <button type="button" class="btn btn-success btn-lg" ng-click="fetchWeather()">{{buttonText}}</button>
+                      </form>
+                      <div class="alert alert-danger" ng-show="showerrors">{{error}}</div>
+                      <div class="result" ng-show="showresult">
+
+
+                          <table class="table responstable">
+                              <thead>
+                                  <tr>
+                                      <th>Date</th>
+                                      <th>Main</th>
+                                      <th>Weather</th>
+                                      <th>Clouds</th>
+                                      <th>wind</th>
+                                      <th>Rain</th>
+                                  </tr>
+                              </thead>
+                              <!--Items from the databse list of products-->
+                              <tbody ng-repeat="item in responseData.list" class="repeat-animation">
+                                  <tr>
+                                      <td data-th="Date">{{item.dt_txt}}</td>
+                                      <td data-th="Main">
+                                          <div class="constrained">{{item.main}}</div>
+                                      </td>
+                                      <td data-th="Weather">{{item.weather}}</td>
+                                      <td data-th="Clouds">{{item.clouds}}</td>
+                                      <td data-th="Wind">{{item.wind}}</td>
+                                      <td data-th="Rain">{{item.rain}}</td>
+                                  </tr>
+                              </tbody>
+                          </table>
+                      </div>
+                  </div>
+              </div>
+          </div>
+        </div>
+    </div>
+
+  </body>
+</html>

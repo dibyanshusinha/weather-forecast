@@ -7,7 +7,7 @@ const getWeather = (address) => {
 
   return new Promise((resolve, reject) => {
 
-    let apiUrl = `https://api.openweathermap.org/data/2.5/forecast?zip=${encodedAddress}&appid=d8c207ec1bc2b9b60b10802a68b7cda4`;
+    const apiUrl = `https://api.openweathermap.org/data/2.5/forecast?zip=${encodedAddress}&appid=d8c207ec1bc2b9b60b10802a68b7cda4`;
 
     request({
       url: apiUrl,

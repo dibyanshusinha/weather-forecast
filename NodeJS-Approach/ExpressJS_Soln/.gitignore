@@ -3,8 +3,8 @@
 # dependencies
 /node_modules
 
-# config vars
-config.json
+# config vars uncomment it
+# config.json
 
 # testing
 /coverage
@@ -22,3 +22,5 @@ config.json
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+
+/server.log

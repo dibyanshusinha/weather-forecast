@@ -1,0 +1,10 @@
+{
+  "development":{
+    "PORT" : 3000,
+    "APPAPIKEY": "d8c207ec1bc2b9b60b10802a68b7cda4"
+  },
+  "test":{
+    "PORT" : 3000,
+    "APPAPIKEY": "d8c207ec1bc2b9b60b10802a68b7cda4"
+  }
+}
