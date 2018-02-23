@@ -34,7 +34,7 @@ After reading the Project details provided, I had few ways I could implement it.
 Choosing "request" Node module(doesn't have inbuilt Promise) for making requests and wrapping it as a Promise supported module. _Obviously using axios, it would have been simply much easier !!_
 
   * [As a console App](https://www.google.com)
-  * [As a webApp](https://www.google.com)
+  * [As a webApp](https://www.google.com) It contains 2 Test cases.(Could have more)
 
 
 
@@ -46,6 +46,7 @@ Choosing "request" Node module(doesn't have inbuilt Promise) for making requests
 I believe progress/improvement to be a never ending continuous process. With time many things could be improved to a point where it's ~~perfect~~  close to perfect !!
 
 However few of the things that currently comes to mind:
+* Few more validations
 * Add some graphs for historical Data
 * Add solution using few more frameworks
 * Include more test cases
