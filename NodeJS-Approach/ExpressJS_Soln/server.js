@@ -85,6 +85,25 @@ app.post('/fetchWeather', (req, res) => {
   //   console.log(e);
   // });
 
+
+//   //Using Vanilla JS
+//   var request = new XMLHttpRequest();
+// request.open('GET', '/api/content', true);
+//
+// request.onload = function() {
+//     if (this.status >= 200 && this.status < 400) {
+//         var data = JSON.parse(this.response);
+//     } else {
+//         console.error('Response received and there was an error');
+//     }
+// };
+//
+// request.onerror = function() {
+//     console.error('Request error');
+// };
+//
+// request.send();
+
 });
 
 // app.use((req, res, next) =>{

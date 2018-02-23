@@ -15,17 +15,13 @@
 </head>
   <body>
     <div class="content-container">
-        <div class="content-container" ng-view="">
+        <div class="content-container" ng-app="myApp" ng-controller="myCtrl">
           <div class="container-holder">
               <div class="container">
                   <div class="center">
                       <h1 class="center white">Weather Information</h1>
                       <p class="lead center white"><strong>Enter your city's Zip-code below to get a forecast for the weather.</strong>
                       </p>
-                      <form method="post" action="/fetchWeather">
-                        <input type="text" name="username">
-                        <input type="submit">
-                      </form>
                       <form>
                           <div class="form-group">
                               <input type="text" class="form-control" name="city" ng-model="address" placeholder="Eg. Try 40741 for London..." />
@@ -67,6 +63,7 @@
           </div>
         </div>
     </div>
-
+    <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js" charset="utf-8"></script>
+    <script src="assets/scripts/main.js" charset="utf-8"></script>
   </body>
 </html>
