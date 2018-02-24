@@ -2,7 +2,8 @@
 In the my-app/ npm install
 This project use yarn or npm start from your terminal and fire your browser @ http://localhost:3000
 
-## Live @ [demo](https://dibyanshusinha.github.io/weather-forecast/Client-or-FrontEnd-Approaches/react-soln/my-app/demo/)
+## Live @ [demo](https://react-app-8b005.firebaseapp.com)
+Using the easier approach- Firebase as it's host, since hosting on Github would have meant config few more things. Leaving that for later
 
 
 This project was bootstrapped with [Create React App](https://github.com/facebookincubator/create-react-app).

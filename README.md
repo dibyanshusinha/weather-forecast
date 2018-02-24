@@ -23,7 +23,7 @@ After reading the Project details provided, I had few ways I could implement it.
     This was mentioned so preferring these approaches.
 
     *  [Using Angular.JS v 1](https://github.com/dibyanshusinha/weather-forecast/tree/master/Client-or-FrontEnd-Approaches/angular-js-v1-soln)
-    *  [Using only JavaScript:](https://github.com/dibyanshusinha/weather-forecast/tree/master/Client-or-FrontEnd-Approaches/react-soln/my-app)  Choosing React as the preferred framework for this use-case. Instead of using some third-party http lib(felt too much for single GET request), ended up writing a native JS with support for Promises.
+    *  [Using only JavaScript: React.js](https://github.com/dibyanshusinha/weather-forecast/tree/master/Client-or-FrontEnd-Approaches/react-soln/my-app)  Choosing React as the preferred framework for this use-case. Instead of using some third-party http lib(felt too much for single GET request), ended up writing a native JS with support for Promises.
 
 
 ### Server Side Approaches: (https://github.com/dibyanshusinha/weather-forecast/tree/master/NodeJS-Approach)
