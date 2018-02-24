@@ -1,3 +1,6 @@
+# To Build
+In the ConsoleApp_Soln/ npm install
+
 # To Run
 navigate to the ConsoleApp_Soln/ and type: node app.js
 
