@@ -3,7 +3,9 @@ In the my-app/ npm install
 This project use yarn or npm start from your terminal and fire your browser @ http://localhost:3000
 
 ## Live @ [demo](https://react-app-8b005.firebaseapp.com)
-Using the easier approach- Firebase as it's host, since hosting on Github would have meant config few more things. Leaving that for later
+Using the easier approach- Firebase as it's host, since hosting on Github would have meant config few more things. Leaving that for later.
+Weather data that was fetched would be shown in a table, which is constructed on the fly. The table is mobile ready, however the data in the table cells could have been more sanitized.
+!!
 
 
 This project was bootstrapped with [Create React App](https://github.com/facebookincubator/create-react-app).
