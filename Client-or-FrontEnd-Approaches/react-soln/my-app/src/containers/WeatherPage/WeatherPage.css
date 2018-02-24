@@ -1,0 +1,21 @@
+.WeatherInfo{
+    text-align: center;
+    padding: 200px;
+}
+.main{
+    padding: 80px;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.3);
+}
+.white{
+    color: white;
+}
+.SingleCenter{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.Smallinput{
+    max-width: 350px;
+    margin: 0 auto;
+}

@@ -1,0 +1,63 @@
+.closeBtn{
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 5px 10px;
+    font-weight: bolder;
+    font-size: 1.5rem;
+    color: red;
+    cursor: pointer;
+}
+
+.Header{
+    padding: 15px 10px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.Title{
+    text-align: center;
+    font-size: 1.3rem;
+}
+
+.Content{
+    padding: 15px 10px;
+}
+
+.btnSuccess{
+    padding: 8px 16px;
+    font-size: 1rem;
+    cursor: pointer;
+    color: white;
+    background-color: rgb(52, 99, 228);
+    border-radius: 5%;
+    border: none;
+    text-decoration: none;
+    display: inline-block;
+
+}
+
+input
+{
+    font-size: 1rem;
+    padding: 0 5px;
+    min-height: 30px;
+    font-weight: bolder;
+    flex-grow: 1;
+    margin: 10px 0;
+}
+
+input[type="password"]{
+    text-align: center;
+    border-radius: 5px;
+}
+
+.flexy{
+    display: flex;
+    justify-content: space-between;
+}
+.SingCentered{
+    display: flex;
+    justify-content: center;
+}

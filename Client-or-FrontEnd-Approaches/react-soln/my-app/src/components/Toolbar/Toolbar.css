@@ -1,0 +1,96 @@
+.Toolbar {
+    height: 56px;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: #23334B;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-sizing: border-box;
+    z-index: 90;
+    box-shadow: 0 2px 2px 0 rgba(0,0,0,0.14), 0 1px 5px 0 rgba(0,0,0,0.12), 0 3px 1px -2px rgba(0,0,0,0.2);
+}
+
+.Toolbar nav {
+    height: 100%;
+}
+
+.Logo {
+    height: 80%;
+}
+
+ul{
+    list-style: none;
+    padding: 0;
+}
+
+ul.VerySmall{
+    font-size: 0.7rem;
+    font-weight: bolder;
+    line-height: 1.2rem;
+    text-align: center;
+}
+
+.VerySmall li>span{
+    margin-right: 10px;
+}
+.VerySmall li>span:last-child{
+    margin-right: 0;
+}
+
+.AccNav{
+    display: flex;
+    font-size: 1.3rem;
+    color: black;
+}
+.AccNav>a{
+    padding: 1rem;
+    background-color: rgba(0, 0, 0, 0.1);
+    color: rgba(255, 255, 255, 0.6);
+    display: block;
+    cursor: pointer;
+}
+.AccNav>a>i{
+    margin: 0 5px;
+}
+
+.AccNav>a:hover{
+    color: rgb(255, 255, 255);
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+.CurNet> .CurrBal{
+    color: green;
+}
+
+.CurNet> span{
+    color: #ffffff69;
+    margin-left: 5px;
+}
+
+.DropdownBtn{
+    padding: 1rem;
+    cursor: pointer;
+}
+.HiddenSmall{
+    display: none;
+}
+@media (min-width: 600px){
+    .HiddenSmall{
+      display: inline-block;
+    }
+}
+@media (max-width: 420px){
+    .HiddenXSmall{
+      display: none;
+    }
+}
+@media (max-width: 499px) {
+    .DesktopOnly {
+        display: none;
+    }
+}
