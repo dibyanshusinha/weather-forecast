@@ -90,7 +90,7 @@
                 $(this).button('loading');
                 $(".alert").hide();
                 if ($("#city").val() != "") {
-                    $.get("//annexire-com.stackstaging.com/dibstest.php?city=" + $("#city").val(),
+                    $.get("http://annexire-com.stackstaging.com/dibstest.php?city=" + $("#city").val(),
                         function(data) {
                             if (data == "") {
                                 $("#fail").fadeIn();
