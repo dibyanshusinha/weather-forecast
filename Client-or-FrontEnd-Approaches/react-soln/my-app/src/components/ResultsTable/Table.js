@@ -4,10 +4,9 @@ import React from 'react';
 import classes from './Table.css';
 
 const table = (props) => {
-    
 
     const thead = props.table.th.map(x=><th key={x}>{x}</th>);
-    
+
 
     const rows = props.data.map((item, v) =>{
         return (
@@ -26,8 +25,8 @@ const table = (props) => {
             </tr>
         );
     });
-    
-    
+
+
 
     const a = (
         <div className={classes.result}>
@@ -43,7 +42,7 @@ const table = (props) => {
             </table>
         </div>
     );
-    
+
 
     return (
         a

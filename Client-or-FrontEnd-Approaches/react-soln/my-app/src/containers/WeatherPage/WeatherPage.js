@@ -4,7 +4,7 @@ import React, { Fragment, Component } from 'react';
 import ImageOverlay from './../../components/UI/ImageOverlay/ImageOverlay';
 import InfoWindow from './../../components/InfoModal/InfoWindow';
 
-import Result from "./../../components/Weather/Result/Result"; 
+import Result from "./../../components/Weather/Result/Result";
 import classes from './WeatherPage.css';
 
 class WeatherPage extends Component {
@@ -23,7 +23,7 @@ class WeatherPage extends Component {
   render() {
 
     const handleBtn = () =>{
-      this.setState((prevState) => { 
+      this.setState((prevState) => {
         return {
           disabled:  !prevState.disabled
         }
@@ -41,56 +41,56 @@ class WeatherPage extends Component {
         handleBtn();
 
         const zip = this.state.address.trim();
+        let qtype = 'forecast?q';
 
-        if(/[a-z0-9][a-z0-9-]{0,10}[a-z0-9]$/i.test(zip)){
-          try {
-              let res = await myApirequest('GET', `https://api.openweathermap.org/data/2.5/forecast?zip=${zip}&appid=d8c207ec1bc2b9b60b10802a68b7cda4`);
+        // if(/^[0-9]*$/i.test(zip)){
+        //   qtype = 'forecast?zip';
+        // }
 
-              let report =  JSON.parse(res.target.response);
-              
+        try {
+            let res = await myApirequest('GET', `https://api.openweathermap.org/data/2.5/${qtype}=${zip}&appid=d8c207ec1bc2b9b60b10802a68b7cda4`);
 
-              // if(report.target.status === 404){
-              //   this.setState({ requestError:  report.target.statusText});
-              // }else{
-              //   if(report.target.status === 200){
-              //     this.setState({ 
-              //       requestError: null
-              //      });
-              //      console.log(typeof report.target.response);
-                   
-              //     report = JSON.parse(report.target.response);
-              //     console.log(report);
-                  
-              //   }
-              // }
+            let report =  JSON.parse(res.target.response);
 
-              
-              
-              if(report.cod === "404"){
-                this.setState({ requestError:  report.message});
-              }else{
-                if(report.cod === "200"){
-                  this.setState({
-                    requestError: null,
-                    data: report.list
-                  });
-                }
+
+            // if(report.target.status === 404){
+            //   this.setState({ requestError:  report.target.statusText});
+            // }else{
+            //   if(report.target.status === 200){
+            //     this.setState({
+            //       requestError: null
+            //      });
+            //      console.log(typeof report.target.response);
+
+            //     report = JSON.parse(report.target.response);
+            //     console.log(report);
+
+            //   }
+            // }
+
+
+
+            if(report.cod === "404"){
+              this.setState({ requestError:  report.message});
+            }else{
+              if(report.cod === "200"){
+                this.setState({
+                  requestError: null,
+                  data: report.list
+                });
               }
+            }
 
-            }catch (APIERROR) {
-              console.log('Api Error');
-              this.setState({ requestError: "Can't connect to server " }); 
-          }
-        } else {
-            console.log("Check zip");
-            this.setState({ requestError: "Check Zip-Code and " });
+          }catch (APIERROR) {
+            console.log('Api Error');
+            this.setState({ requestError: "Can't connect to server " });
         }
 
-        
+
 
         //Enable Button
         handleBtn();
-        
+
     }
 
 
@@ -103,6 +103,7 @@ class WeatherPage extends Component {
             xhr.send();
         });
     }
+    
 
 
 
@@ -114,13 +115,13 @@ class WeatherPage extends Component {
                   <div className="container">
                       <div className={["text-center", classes.white].join(' ')}>
                           <h1>Weather Information</h1>
-                          <p><strong>Enter your city's Zip-code below to get a forecast for the weather.</strong>
+                          <p><strong>Enter your city below to get a forecast for the weather.</strong>
                           </p>
                       </div>
                   </div>
                   <form>
                       <div className="form-group">
-                          <input type="text" className={["form-control", classes.Smallinput].join(" ")} name="city" onChange={zipCodeHandler} placeholder="Eg. Try 40741 for London..." />
+                          <input type="text" className={["form-control", classes.Smallinput].join(" ")} name="city" onChange={zipCodeHandler} placeholder="Eg. Try 40741 or London" />
                       </div>
                       <div className={classes.SingleCenter}><button type="button" className="btn btn-success btn-lg" disabled={this.state.disabled} onClick ={fetchBtnHandler}>button</button></div>
                   </form>
